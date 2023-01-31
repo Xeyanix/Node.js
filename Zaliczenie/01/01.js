@@ -1,0 +1,4 @@
+function firstTask() {
+    firstTask();
+}
+firstTask();
