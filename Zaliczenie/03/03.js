@@ -17,7 +17,7 @@
 
 const fs = require("fs");
 
-fs.stat("./03.js", function (err, stats) {
+fs.stat(__filename, function (err, stats) {
 
     //Checking for errors
     if (err) {
@@ -30,15 +30,5 @@ fs.stat("./03.js", function (err, stats) {
         console.log("Size: " + stats.size)
     }
 });
-
-// --------------------------------------------------------
-
-const fs = require('fs');
-
-stats = fs.statSync("./03.js");
-
-console.log("Modifed Time: " + stats.mtime)
-console.log("Birth Time: " + stats.birthtime)
-console.log("Size: " + stats.size)
 
 
