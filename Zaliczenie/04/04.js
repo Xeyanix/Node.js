@@ -47,7 +47,6 @@ const saveFile = async (readFileName, data) => {
         .then(() => console.log('file saved'));
 }
 
-
 (async () => {
     try {
         const data = await getInfo(readThatNumber);
